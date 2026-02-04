@@ -125,7 +125,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center">
             <Image 
-              src="/mintrud.png" 
+              src="/mintrudLogo.png" 
               alt="Минтруд России" 
               width={65} 
               height={65} 
@@ -390,7 +390,33 @@ export default function Home() {
           </p>
         </div>
       </main>
-
+      <footer className="bg-gray-100 py-8 mt-12 border-t border-gray-200">
+        <div className="container mx-auto px-4 flex flex-col">
+        <div className="flex items-center">
+          <Image 
+            src="/mintrudLogo.png" 
+            alt="Минтруд России" 
+            width={80} 
+            height={80} 
+            className="mb-4"
+          />
+          <div className="flex flex-col ml-4">
+            <p className="text-black text-2xl font-semibold mb-2">
+              Министерство труда
+              <br />
+              и социальной защиты
+            </p>
+            <span className='sub text-dark'>Российской Федерации</span>
+          </div>
+        </div>
+        <br />
+          <div className="col-xs-12 col-sm-6 col-md-6 col-lg-12 main-footer__contacts">
+            <p>Телефон: +7 (495) 587-88-89</p>
+            <p>Адрес: 127994, ГСП-4, г. Москва, ул. Ильинка, 21</p>
+            <p>E-mail: <a href="mailto:mintrud@mintrud.gov.ru" className="text-[#003366] hover:underline">mintrud@mintrud.gov.ru</a></p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
