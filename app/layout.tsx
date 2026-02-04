@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Калькулятор субсидий",
-  description: "Калькулятор для расчета субсидий",
+  title: "Министерство труда и социальной защиты РФ: Расчет единовременной субсидии на приобретение жилого помещения",
+  description: "Калькулятор единовременной субсидии на приобретение жилого помещения",
 };
 
 export default function RootLayout({
@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
+        <link rel="icon" href="/mintrud.png" sizes="any" />
         <meta charSet="utf-8" />
       </head>
       <body
