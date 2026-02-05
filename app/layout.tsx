@@ -25,7 +25,6 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
-        <link rel="icon" href="/mintrud.png" sizes="any" />
         <meta charSet="utf-8" />
       </head>
       <body

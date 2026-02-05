@@ -4,7 +4,7 @@ import { pool } from '@/mysql/db';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { cityId, familyMembers, additionalArea, ownedArea, yearsOfService } = body;
+    const { cityId, familyMembers, additionalArea, ownedArea, yearsOfService} = body;
 
     if (!cityId || !familyMembers || additionalArea === undefined || ownedArea === undefined || yearsOfService === undefined) {
       return NextResponse.json(

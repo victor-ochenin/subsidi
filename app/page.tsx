@@ -122,27 +122,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#f0f4fa] font-sans">
       <header className="bg-white border-b border-gray-200">
-        <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center">
-            <Image 
-              src="/mintrudLogo.png" 
-              alt="Минтруд России" 
-              width={65} 
-              height={65} 
-              className="mr-4"
-            />
-          <div>
-          <h1 className="font-extrabold text-black leading-tight">
-            Минтруд
-            <br />
-            России
-          </h1>
-        </div>
-          </div>
-        </div>
+
       </header>
 
-      <main className="container mx-auto px-4 py-8 max-w-4xl">
+      <main className="container mx-auto px-4 py-8 max-w-236">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-black mb-4">
             Калькулятор единовременной субсидии на приобретение жилого помещения
@@ -182,11 +165,11 @@ export default function Home() {
               <h4 className="text-lg font-semibold text-gray-800 border-b pb-2">Детали расчета</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <div className="text-sm text-gray-500">Город</div>
+                  <div className="text-sm text-gray-500">Субъект Российской Федерации</div>
                   <div className="font-medium text-gray-800">{result.calculationDetails.cityName}</div>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <div className="text-sm text-gray-500">Норматив стоимости 1 кв. метра</div>
+                  <div className="text-sm text-gray-500">Стоимость 1 кв. метра, утверждаемая Минстроем России</div>
                   <div className="font-medium text-gray-800">
                     {result.calculationDetails.marketValuePerSqMeter.toLocaleString('ru-RU', {
                       style: 'currency',
@@ -195,15 +178,19 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <div className="text-sm text-gray-500">Стаж государственной службы</div>
+                <div className="text-sm text-gray-500">Поправочный коэффициент, утверждаемый Минтрудом России</div>
+                <div className="font-medium text-gray-800">{result.calculationDetails.marketValueCorrectionFactor}</div>
+              </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <div className="text-sm text-gray-500">Стаж</div>
                   <div className="font-medium text-gray-800">{result.calculationDetails.yearsOfService} лет</div>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <div className="text-sm text-gray-500">Количество членов семьи</div>
+                  <div className="text-sm text-gray-500">Численность членов семьи</div>
                   <div className="font-medium text-gray-800">{result.calculationDetails.familyMembers}</div>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <div className="text-sm text-gray-500">Нормативная площадь</div>
+                  <div className="text-sm text-gray-500">Норматив</div>
                   <div className="font-medium text-gray-800">{result.calculationDetails.normativeArea} кв. м</div>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
@@ -211,7 +198,7 @@ export default function Home() {
                   <div className="font-medium text-gray-800">{result.calculationDetails.additionalArea} кв. м</div>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <div className="text-sm text-gray-500">Имеющаяся площадь</div>
+                  <div className="text-sm text-gray-500">Площадь в собственности и (или) в социальном найме</div>
                   <div className="font-medium text-gray-800">{result.calculationDetails.ownedArea} кв. м</div>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
@@ -239,7 +226,7 @@ export default function Home() {
                     htmlFor="cityId"
                     className="block text-sm font-semibold text-gray-700 mb-2"
                   >
-                    Город
+                    Субъект Российской Федерации
                   </label>
                   <select
                     id="cityId"
@@ -252,7 +239,7 @@ export default function Home() {
                     disabled={loading}
                   >
                     <option value="">
-                      Выберите город
+                      Выберите субьект
                     </option>
                     {cities.map((city) => (
                       <option key={city.id} value={city.id}>
@@ -267,7 +254,7 @@ export default function Home() {
                     htmlFor="familyMembers"
                     className="block text-sm font-semibold text-gray-700 mb-2"
                   >
-                    Количество членов семьи
+                    Численность членов семьи
                   </label>
                   <input
                     type="number"
@@ -306,12 +293,12 @@ export default function Home() {
                   <p className="text-xs text-gray-500 mt-1">Согласно категории должности</p>
                 </div>
 
-                <div>
+                <div className="whitespace-nowrap">
                   <label
                     htmlFor="ownedArea"
                     className="block text-sm font-semibold text-gray-700 mb-2"
                   >
-                    Имеющаяся площадь (кв. м)
+                    Площадь в собственности и (или) в социальном найме (кв. м)
                   </label>
                   <input
                     type="number"
@@ -334,7 +321,7 @@ export default function Home() {
                     htmlFor="yearsOfService"
                     className="block text-sm font-semibold text-gray-700 mb-2"
                   >
-                    Стаж государственной службы (лет)
+                    Стаж (лет)
                   </label>
                   <input
                     type="number"
@@ -345,11 +332,10 @@ export default function Home() {
                     }
                     className="w-full px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366] focus:border-transparent transition-all"
                     placeholder="Введите стаж"
-                    min="7"
+                    min="1"
                     step="1"
                     required
                   />
-                  <p className="text-xs text-gray-500 mt-1">Не менее 7 лет</p>
                 </div>
               </div>
 
@@ -390,32 +376,8 @@ export default function Home() {
           </p>
         </div>
       </main>
-      <footer className="bg-gray-100 py-8 mt-12 border-t border-gray-200">
-        <div className="container mx-auto px-4 flex flex-col">
-        <div className="flex items-center">
-          <Image 
-            src="/mintrudLogo.png" 
-            alt="Минтруд России" 
-            width={80} 
-            height={80} 
-            className="mb-4"
-          />
-          <div className="flex flex-col ml-4">
-            <p className="text-black text-2xl font-semibold mb-2">
-              Министерство труда
-              <br />
-              и социальной защиты
-            </p>
-            <span className='sub text-dark'>Российской Федерации</span>
-          </div>
-        </div>
-        <br />
-          <div className="col-xs-12 col-sm-6 col-md-6 col-lg-12 main-footer__contacts">
-            <p>Телефон: +7 (495) 587-88-89</p>
-            <p>Адрес: 127994, ГСП-4, г. Москва, ул. Ильинка, 21</p>
-            <p>E-mail: <a href="mailto:mintrud@mintrud.gov.ru" className="text-[#003366] hover:underline">mintrud@mintrud.gov.ru</a></p>
-          </div>
-        </div>
+      <footer className="bg-gray-100 mt-12">
+        
       </footer>
     </div>
   );
