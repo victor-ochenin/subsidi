@@ -125,16 +125,11 @@ export default function Home() {
 
       </header>
 
-      <main className="container mx-auto px-4 py-8 max-w-236">
+      <main className="container mx-auto px-4 py-8 max-w-242 min-h-[850px]">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-black mb-4">
-            Калькулятор единовременной субсидии на приобретение жилого помещения
+            Калькулятор расчета единовременной субсидии на приобретение жилого помещения, предоставляемой федеральным гражданским служащим
           </h2>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            Расчет единовременной субсидии на приобретение жилого помещения, 
-            предоставляемой федеральным государственным гражданским служащим в соответствии 
-            с Указом Президента Российской Федерации
-          </p>
         </div>
 
         {showResult && result && result.success && result.calculationDetails ? (
@@ -226,7 +221,7 @@ export default function Home() {
                     htmlFor="cityId"
                     className="block text-sm font-semibold text-gray-700 mb-2"
                   >
-                    Субъект Российской Федерации
+                    Место прохождения гражданской службы
                   </label>
                   <select
                     id="cityId"
@@ -239,7 +234,7 @@ export default function Home() {
                     disabled={loading}
                   >
                     <option value="">
-                      Выберите субьект
+                      Выберите субъект Российской Федерации 
                     </option>
                     {cities.map((city) => (
                       <option key={city.id} value={city.id}>
@@ -254,7 +249,7 @@ export default function Home() {
                     htmlFor="familyMembers"
                     className="block text-sm font-semibold text-gray-700 mb-2"
                   >
-                    Численность членов семьи
+                    Лица, учитываемые при расчете единовременной субсидии
                   </label>
                   <input
                     type="number"
@@ -266,6 +261,7 @@ export default function Home() {
                     className="w-full px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366] focus:border-transparent transition-all"
                     placeholder="Введите количество"
                     min="1"
+                    max="10"
                     required
                   />
                 </div>
@@ -288,17 +284,18 @@ export default function Home() {
                     placeholder="Введите площадь"
                     min="0"
                     step="1"
+                    max="100"
                     required
                   />
                   <p className="text-xs text-gray-500 mt-1">Согласно категории должности</p>
                 </div>
 
-                <div className="whitespace-nowrap">
+                <div>
                   <label
                     htmlFor="ownedArea"
                     className="block text-sm font-semibold text-gray-700 mb-2"
                   >
-                    Площадь в собственности и (или) в социальном найме (кв. м)
+                    Площадь в собственности (кв. м)
                   </label>
                   <input
                     type="number"
@@ -311,9 +308,10 @@ export default function Home() {
                     placeholder="Введите площадь"
                     min="0"
                     step="1"
+                    max="100"
                     required
                   />
-                  <p className="text-xs text-gray-500 mt-1">Суммарная площадь имеющегося жилья</p>
+                  <p className="text-xs text-gray-500 mt-1">Общая площадь жилых помещений</p>
                 </div>
 
                 <div>
@@ -334,6 +332,7 @@ export default function Home() {
                     placeholder="Введите стаж"
                     min="1"
                     step="1"
+                    max="40"
                     required
                   />
                 </div>
@@ -369,15 +368,25 @@ export default function Home() {
 
         <div className="mt-8 text-sm text-gray-500">
           <p className="mb-2">
-            <strong>Внимание:</strong> Расчет производится в соответствии с действующим законодательством Российской Федерации.
+            <strong>Внимание:</strong> Данный калькулятор позволяет осуществить только приблизительный расчет!
           </p>
           <p>
-            Для получения точной информации и оформления документов обратитесь в соответствующий отдел вашего ведомства.
+            Точный размер субсидии уполномочен определять федеральный государственный орган на основании документов, предоставленных гражданским служащим!
           </p>
         </div>
       </main>
-      <footer className="bg-gray-100 mt-12">
-        
+      <footer className="bg-gray-100 py-4 mt-12 border-t border-gray-200">
+         <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <h3 className="font-bold text-gray-800">Авторы:</h3>
+              <p className="text-gray-600">Оченин Виктор и Сергей Селиванов</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-800">Контакты:</h3>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

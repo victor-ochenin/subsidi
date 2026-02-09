@@ -2,11 +2,13 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY package.json package-lock.json* ./
+USER node
+
+COPY --chown=node:node package.json package-lock.json* ./
 
 RUN npm ci
 
-COPY . .
+COPY --chown=node:node . .
 
 RUN npm run build
 
