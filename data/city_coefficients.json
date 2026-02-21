@@ -1,0 +1,566 @@
+[
+  {
+    "id": 1,
+    "city_name": "Москва",
+    "market_value_per_sq_meter": 201890.00,
+    "market_value_correction_factor": 1.94
+  },
+  {
+    "id": 2,
+    "city_name": "Белгородская область",
+    "market_value_per_sq_meter": 100754.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 3,
+    "city_name": "Брянская область",
+    "market_value_per_sq_meter": 96287.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 4,
+    "city_name": "Владимирская область",
+    "market_value_per_sq_meter": 99082.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 5,
+    "city_name": "Воронежская область",
+    "market_value_per_sq_meter": 103595.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 6,
+    "city_name": "Ивановская область",
+    "market_value_per_sq_meter": 90027.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 7,
+    "city_name": "Калужская область",
+    "market_value_per_sq_meter": 92020.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 8,
+    "city_name": "Костромская область",
+    "market_value_per_sq_meter": 82743.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 9,
+    "city_name": "Курская область",
+    "market_value_per_sq_meter": 116559.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 10,
+    "city_name": "Липецкая область",
+    "market_value_per_sq_meter": 89491.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 11,
+    "city_name": "Московская область",
+    "market_value_per_sq_meter": 166424.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 12,
+    "city_name": "Орловская область",
+    "market_value_per_sq_meter": 80191.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 13,
+    "city_name": "Рязанская область",
+    "market_value_per_sq_meter": 84462.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 14,
+    "city_name": "Смоленская область",
+    "market_value_per_sq_meter": 90676.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 15,
+    "city_name": "Тамбовская область",
+    "market_value_per_sq_meter": 77600.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 16,
+    "city_name": "Тверская область",
+    "market_value_per_sq_meter": 74506.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 17,
+    "city_name": "Тульская область",
+    "market_value_per_sq_meter": 98516.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 18,
+    "city_name": "Ярославская область",
+    "market_value_per_sq_meter": 91239.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 19,
+    "city_name": "Республика Карелия (без арктической части)",
+    "market_value_per_sq_meter": 109515.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 20,
+    "city_name": "Республика Карелия (арктическая часть)",
+    "market_value_per_sq_meter": 144911.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 21,
+    "city_name": "Республика Коми (без арктической части)",
+    "market_value_per_sq_meter": 87048.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 22,
+    "city_name": "Республика Коми (арктическая часть)",
+    "market_value_per_sq_meter": 124377.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 23,
+    "city_name": "Архангельская область (без арктической части)",
+    "market_value_per_sq_meter": 108485.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 24,
+    "city_name": "Архангельская область (арктическая часть)",
+    "market_value_per_sq_meter": 122598.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 25,
+    "city_name": "Вологодская область",
+    "market_value_per_sq_meter": 93121.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 26,
+    "city_name": "Калининградская область",
+    "market_value_per_sq_meter": 114034.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 27,
+    "city_name": "Ленинградская область",
+    "market_value_per_sq_meter": 153632.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 28,
+    "city_name": "Мурманская область",
+    "market_value_per_sq_meter": 143303.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 29,
+    "city_name": "Новгородская область",
+    "market_value_per_sq_meter": 87057.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 30,
+    "city_name": "Псковская область",
+    "market_value_per_sq_meter": 83589.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 31,
+    "city_name": "Ненецкий автономный округ",
+    "market_value_per_sq_meter": 122924.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 32,
+    "city_name": "Санкт-Петербург",
+    "market_value_per_sq_meter": 165315.00,
+    "market_value_correction_factor": 1.68
+  },
+  {
+    "id": 33,
+    "city_name": "Республика Адыгея",
+    "market_value_per_sq_meter": 119903.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 34,
+    "city_name": "Республика Калмыкия",
+    "market_value_per_sq_meter": 79808.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 35,
+    "city_name": "Республика Крым",
+    "market_value_per_sq_meter": 143904.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 36,
+    "city_name": "Краснодарский край",
+    "market_value_per_sq_meter": 163431.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 37,
+    "city_name": "Астраханская область",
+    "market_value_per_sq_meter": 108827.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 38,
+    "city_name": "Волгоградская область",
+    "market_value_per_sq_meter": 91594.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 39,
+    "city_name": "Ростовская область",
+    "market_value_per_sq_meter": 102023.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 40,
+    "city_name": "Севастополь",
+    "market_value_per_sq_meter": 171831.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 41,
+    "city_name": "Республика Дагестан",
+    "market_value_per_sq_meter": 81991.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 42,
+    "city_name": "Республика Ингушетия",
+    "market_value_per_sq_meter": 59540.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 43,
+    "city_name": "Кабардино-Балкарская Республика",
+    "market_value_per_sq_meter": 55483.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 44,
+    "city_name": "Карачаево-Черкесская Республика",
+    "market_value_per_sq_meter": 90448.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 45,
+    "city_name": "Республика Северная Осетия - Алания",
+    "market_value_per_sq_meter": 79432.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 46,
+    "city_name": "Чеченская Республика",
+    "market_value_per_sq_meter": 85840.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 47,
+    "city_name": "Ставропольский край",
+    "market_value_per_sq_meter": 101287.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 48,
+    "city_name": "Республика Башкортостан",
+    "market_value_per_sq_meter": 116212.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 49,
+    "city_name": "Республика Марий Эл",
+    "market_value_per_sq_meter": 91026.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 50,
+    "city_name": "Республика Мордовия",
+    "market_value_per_sq_meter": 86518.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 51,
+    "city_name": "Республика Татарстан",
+    "market_value_per_sq_meter": 153146.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 52,
+    "city_name": "Удмуртская Республика",
+    "market_value_per_sq_meter": 106872.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 53,
+    "city_name": "Чувашская Республика",
+    "market_value_per_sq_meter": 98819.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 54,
+    "city_name": "Пермский край",
+    "market_value_per_sq_meter": 133727.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 55,
+    "city_name": "Кировская область",
+    "market_value_per_sq_meter": 95260.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 56,
+    "city_name": "Нижегородская область",
+    "market_value_per_sq_meter": 131787.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 57,
+    "city_name": "Оренбургская область",
+    "market_value_per_sq_meter": 89815.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 58,
+    "city_name": "Пензенская область",
+    "market_value_per_sq_meter": 88994.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 59,
+    "city_name": "Самарская область",
+    "market_value_per_sq_meter": 114951.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 60,
+    "city_name": "Саратовская область",
+    "market_value_per_sq_meter": 89859.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 61,
+    "city_name": "Ульяновская область",
+    "market_value_per_sq_meter": 95926.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 62,
+    "city_name": "Курганская область",
+    "market_value_per_sq_meter": 86685.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 63,
+    "city_name": "Свердловская область",
+    "market_value_per_sq_meter": 107364.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 64,
+    "city_name": "Тюменская область",
+    "market_value_per_sq_meter": 120958.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 65,
+    "city_name": "Челябинская область",
+    "market_value_per_sq_meter": 95724.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 66,
+    "city_name": "Ханты-Мансийский автономный округ – Югра (без арктической части)",
+    "market_value_per_sq_meter": 113592.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 67,
+    "city_name": "Ханты-Мансийский автономный округ – Югра (арктическая часть)",
+    "market_value_per_sq_meter": 131035.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 68,
+    "city_name": "Ямало-Ненецкий автономный округ",
+    "market_value_per_sq_meter": 184613.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 69,
+    "city_name": "Республика Алтай",
+    "market_value_per_sq_meter": 165244.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 70,
+    "city_name": "Республика Тыва",
+    "market_value_per_sq_meter": 135970.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 71,
+    "city_name": "Республика Хакасия",
+    "market_value_per_sq_meter": 113001.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 72,
+    "city_name": "Алтайский край",
+    "market_value_per_sq_meter": 108895.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 73,
+    "city_name": "Красноярский край (без арктической части)",
+    "market_value_per_sq_meter": 113297.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 74,
+    "city_name": "Красноярский край (арктическая часть)",
+    "market_value_per_sq_meter": 137482.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 75,
+    "city_name": "Иркутская область",
+    "market_value_per_sq_meter": 122999.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 76,
+    "city_name": "Кемеровская область",
+    "market_value_per_sq_meter": 106492.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 77,
+    "city_name": "Новосибирская область",
+    "market_value_per_sq_meter": 118998.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 78,
+    "city_name": "Омская область",
+    "market_value_per_sq_meter": 110204.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 79,
+    "city_name": "Томская область",
+    "market_value_per_sq_meter": 121374.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 80,
+    "city_name": "Республика Саха (Якутия)",
+    "market_value_per_sq_meter": 167786.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 81,
+    "city_name": "Камчатский край",
+    "market_value_per_sq_meter": 175849.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 82,
+    "city_name": "Приморский край",
+    "market_value_per_sq_meter": 178123.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 83,
+    "city_name": "Хабаровский край",
+    "market_value_per_sq_meter": 163895.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 84,
+    "city_name": "Амурская область",
+    "market_value_per_sq_meter": 163757.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 85,
+    "city_name": "Магаданская область",
+    "market_value_per_sq_meter": 161000.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 86,
+    "city_name": "Сахалинская область",
+    "market_value_per_sq_meter": 163189.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 87,
+    "city_name": "Еврейская автономная область",
+    "market_value_per_sq_meter": 112094.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 88,
+    "city_name": "Чукотский автономный округ",
+    "market_value_per_sq_meter": 265027.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 89,
+    "city_name": "Республика Бурятия",
+    "market_value_per_sq_meter": 127745.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 90,
+    "city_name": "Забайкальский край",
+    "market_value_per_sq_meter": 160103.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 91,
+    "city_name": "Луганская Народная Республика",
+    "market_value_per_sq_meter": 116427.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 92,
+    "city_name": "Донецкая Народная Республика",
+    "market_value_per_sq_meter": 116427.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 93,
+    "city_name": "Запорожская область",
+    "market_value_per_sq_meter": 116427.00,
+    "market_value_correction_factor": 1.00
+  },
+  {
+    "id": 94,
+    "city_name": "Херсонская область",
+    "market_value_per_sq_meter": 116427.00,
+    "market_value_correction_factor": 1.00
+  }
+]
