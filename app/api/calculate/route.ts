@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { pool } from '@/mysql/db';
+import fs from 'fs/promises';
+import path from 'path';
 
 export async function POST(request: NextRequest) {
   try {
@@ -61,28 +62,20 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const [rows] = await pool.execute(
-      'SELECT city_name, market_value_per_sq_meter, market_value_correction_factor FROM city_coefficients WHERE id = ?',
-      [cityId]
-    );
-
-    const cities = rows as Array<{
+    const filePath = path.join(process.cwd(), 'data', 'city_coefficients.json');
+    const fileContent = await fs.readFile(filePath, 'utf8');
+    const cityList = JSON.parse(fileContent) as Array<{
+      id: number | string;
       city_name: string;
       market_value_per_sq_meter: number;
       market_value_correction_factor: number;
     }>;
 
-    if (cities.length === 0) {
-      return NextResponse.json(
-        {
-          success: false,
-          error: 'Город не найден',
-        },
-        { status: 404 }
-      );
+    const city = cityList.find((c) => Number(c.id) === Number(cityId));
+    if (!city) {
+      return NextResponse.json({ success: false, error: 'Город не найден' }, { status: 404 });
     }
 
-    const city = cities[0];
     const marketValuePerSqMeter = Number(city.market_value_per_sq_meter);
     const marketValueCorrectionFactor = Number(city.market_value_correction_factor);
 
